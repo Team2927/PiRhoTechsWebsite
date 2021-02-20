@@ -1,0 +1,177 @@
+{% extends 'base.html' %} {% block title %} About/Contact--PiRhoTechs--GKHS Robotics {% endblock %} {% block content %}
+<h1>Who We Are</h1>
+<p style="text-align: center"><em style="font-size: 1.5em">"The Flames Just Keeps Growing Higher!"</em></p>
+
+<h4 style="text-align: left">Our Mission</h4>
+<p>
+  <span style="font-family: helvetica; font-size: medium">
+    <em
+      ><span style="color: #ffffff">
+        Inspire students to become leaders through engineering and the fun of
+        <a href="{{ url_for('sponsors')}}">FIRST</a>Robotics.
+      </span></em
+    >
+  </span>
+</p>
+
+<h4>About the Team</h4>
+<p>
+  <span style="font-family: helvetica; font-size: medium"
+    >Pi Rho Techs is FIRST Robotics Team 2927, from Graham-Kapowsin High School in Graham, WA. <br /><br />
+    The Pi Rho Techs Team is focused on growth as a team and as a family freindly area. In which students of all feilds
+    can come and express their unique personalities in order to find new friends and to feel more acquainted to the
+    school.
+  </span>
+</p>
+
+<h4>About Graham-Kapowsin High School</h4>
+<p>
+  <span style="font-family: helvetica; font-size: medium"
+    >Graham-Kapowsin High School, located in a residential suburb of Graham, WA, it offers a comprehensive curriculum
+    for students in grades 9-12. In addition to traditional core subjects, students can choose from a wide variety of
+    Advanced Placement offerings for college credit, as well as numerous electives in arts, music, engineering, business
+    and more. Vocational and alternative education experiences are also made available to students. A highly skilled
+    staff works to create a warm and welcoming environment for all students and actively encourages the involvement of
+    parents in their children's education.</span
+  >
+</p>
+<p>
+  <span style="font-family: helvetica; font-size: medium">
+    <a title="Bethel School District" href="https://www.bethelsd.org/" target="_blank">Bethel School District</a>
+    <br />
+    <a title="Graham-Kapowsin High School" href="https://www.bethelsd.org/gkhs" target="_blank"
+      >Graham-Kapowsin High School</a
+    >
+    <br />
+    22100 108th Ave E,
+    <br />
+    Graham, WA 98338
+  </span>
+</p>
+
+<!--
+<h4>About Harris</h4>
+<p><span style="font-family: helvetica; font-size: medium;">Harris Corporation is an international communications equipment company focused on providing product, system, and service solutions for commercial and government customers. The company's five operating divisions serve markets for microwave, broadcast, network support, secure tactical radio, and government communications systems. Harris has more than 10,000 employees, including 4,000 engineers and scientists.
+</span></p>
+<p><span style="font-family: helvetica; font-size: medium;">Harris RF Communications Division (RFCD) is a leading supplier of secure voice and data communications products, systems and networks to military, government, and commercial organizations worldwide.
+</span></p>
+<p><span style="font-family: helvetica; font-size: medium;"><a title="Harris" href="http://www.rfcomm.harris.com/">Harris RF Communications</a></span>
+<br />
+<span style="font-family: helvetica; font-size: medium;">1680 University Avenue</span><br /><span style="font-family: helvetica; font-size: medium;">Rochester, New York 14610
+</span></p>
+-->
+
+<h4>About the FIRST Robotics Competition</h4>
+<p>
+  <span style="font-family: helvetica; font-size: medium"
+    >The
+    <a title="What is FIRST" href="{{ url_for('sponsors')}}">FIRST </a>
+    Robotics Competition challenges teams of students and their mentors to solve a common problem in a six-week
+    timeframe using a standard "kit of parts" and a common set of rules. Teams build robots from the parts and enter
+    them in a series of competitions designed by Dean Kamen and Woodie Flowers. The Competition has grown to over 900
+    teams competing in 26 Regional Events, and The Championship held at the Georgia Dome in Atlanta where more than
+    7,000 students participate. <br /><br />
+    FIRST redefines winning for these students. Teams are rewarded for excellence in design, demonstrated team spirit,
+    gracious professionalism and maturity, and ability to overcome obstacles. Scoring the most points is a secondary
+    goal. Winning means building partnerships that last.
+    <br /><br />
+    <a title="FIRST Website" href="http://www.usfirst.org/" target="_blank">FIRST</a>
+    <br />
+    <a title="FIRST Robotics Competition" href="http://www.usfirst.org/roboticsprograms/frc" target="_blank"
+      >FIRST Robotics Competition</a
+    >
+  </span>
+</p>
+
+<h4>About Team Structure</h4>
+<p>
+  <span style="font-family: helvetica; font-size: medium"
+    >For specialized work, the team is divided into the following subteams:</span
+  >
+</p>
+<ul>
+  <li>
+    <span style="font-family: helvetica; font-size: medium"
+      ><span style="color: #b50000"><strong>Leadership:</strong></span> This subteam is responsible for creating the
+      team structure, determining the team calendar, setting up team activities and trainings, and managing school
+      relations.</span
+    >
+  </li>
+
+  <li>
+    <span style="font-family: helvetica; font-size: medium"
+      ><span style="color: #b50000"><strong>Mechanical:</strong></span> This subteam is responsible for designing the
+      mechanical components of the robot, as well as putting them together. Components are designed in CAD, and
+      sometimes a prototype is created before final assembly.</span
+    >
+  </li>
+
+  <li>
+    <span style="font-family: helvetica; font-size: medium"
+      ><span style="color: #b50000"><strong>Electrical:</strong></span> This subteam is responsible for designing and
+      producing all electrical systems for the robot and control panel. It is also responsible for any pneumatics that
+      are used.</span
+    >
+  </li>
+
+  <li>
+    <span style="font-family: helvetica; font-size: medium"
+      ><span style="color: #b50000"><strong>Programming:</strong></span> This subteam is responsible for creating the
+      actual code that makes the robot work. It also creates the autonomous code(s) for the competition.</span
+    >
+  </li>
+
+  <li>
+    <span style="font-family: helvetica; font-size: medium"
+      ><span style="color: #b50000"><strong>Webpage:</strong></span> This subteam is responsible for creating and
+      maintaining the webpage, forums, blog, wiki, and smugmug photo database. They also work to unify our teams social
+      media and web presence.</span
+    >
+  </li>
+
+  <li>
+    <span style="font-family: helvetica; font-size: medium"
+      ><span style="color: #b50000"><strong>Strategy:</strong></span> This subteam is responsible for actually
+      controlling and driving the robot. They are also the rules experts of the team, and have created strategies for
+      the best scores.</span
+    >
+  </li>
+
+  <li>
+    <span style="font-family: helvetica; font-size: medium"
+      ><span style="color: #b50000"><strong>Marketing:</strong></span> This subteam creates all presentations, press
+      releases, newsletters and any other public relations propaganda. They are also responsible for team logos,
+      clothing, and team spirit.</span
+    >
+  </li>
+
+  <li>
+    <span style="font-family: helvetica; font-size: medium"
+      ><strong><span style="color: #b50000">Animation:</span>&nbsp;</strong>This subteam learns the ins and outs of 3D
+      Studio Max in preparation for the Animation competition each year.</span
+    >
+  </li>
+</ul>
+
+<h1>We would love to hear from you!</h1>
+<form method="post" action="http://formspree.io/2927PIRHOTECHS@gmail.com">
+  <table>
+    <tr>
+      <td style="padding-left: 100px; padding-right: 150px; color: #b50000">Name</td>
+      <td><input type="text" size="30" name="name" placeholder="Your name" /></td>
+    </tr>
+    <tr>
+      <td style="padding-left: 100px; padding-right: 150px; color: #b50000">E-mail</td>
+      <td><input type="text" size="30" name="email" placeholder="Your email" /></td>
+    </tr>
+    <tr>
+      <td style="padding-left: 100px; color: #b50000">Message or question</td>
+      <td><textarea cols="45" rows="6" name="message" placeholder="Your message"></textarea></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><input type="submit" value="Submit" /></td>
+    </tr>
+  </table>
+</form>
+{% endblock %}
