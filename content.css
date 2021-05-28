@@ -1,0 +1,107 @@
+﻿#l-wrap {
+      width: 960px;
+      margin: 0 auto;
+      text-align: left;
+}
+#edit-main {
+      background: url('Images/Back/backgroundBotTile2.png');
+      font: 11px Verdana, Arial;
+}
+#l-content, #edit-main {
+	/*fade background behind text/slideshow*/
+    background-image: url('Images/Back/backgroundContentFade.png');
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	min-height: 400px;
+	margin: 0px;
+	font-size: 16px;
+	width: 796px;
+	padding: 0px 7px 7px;
+	float: left;
+	clear: none;
+	display: inline;
+	color: #CCC;
+	background-position-x: 280px;
+	background-position-y: 200px;
+}
+
+
+
+
+div.officiallinks {
+      float: left;
+      display: block;
+      width: 50%;
+}
+div.localteams {
+      float: right;
+      display: block;
+      width: 50%;
+}
+h1 {
+      text-align: center;
+      color: #B50000;
+      font-size: 2em;
+      margin-top: 10px;
+      padding-top: 0;
+      text-shadow: 2px 2px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+h2 {
+      color: #CCCCCC;
+      font-size: 1.5em;
+}
+h3 {
+      color: #CCCCCC;
+      font-size: 1em;
+}
+h4 {
+      color: #B50000;
+      font-size: 1.5em;
+      text-shadow: 2px 2px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+h5 {
+      color: #B50000;
+      font-size: 1em;
+      text-shadow: 2px 2px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+:link, :visited {
+      color: #39F;
+      text-decoration: underline;
+}
+:link:hover, :visited:hover {
+      text-decoration: none;
+}
+:link img, :visited img {
+      border: 0;
+}
+.b {
+      font-weight: bold;
+}
+.i {
+      font-style: italic;
+}
+.u {
+      text-decoration: underline;
+}
+/*TABLE.achView TD
+{
+	padding: 4px;
+}*/
+/*TABLE.achView TR:nth-child(odd) TD
+{
+	background-color: #333333;
+}*/
+/*TABLE.achView TR:nth-child(even) TD
+{
+	background-color: #2A2A2A;
+}*/
+/*TABLE.achView
+{
+	border-spacing: 0px;
+}*/
+/*TABLE.achView TR.pad TD
+{
+	background-color: #000000;
+	height: 0px;
+	padding: 1px;
+}*/

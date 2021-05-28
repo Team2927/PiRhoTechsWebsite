@@ -1,0 +1,181 @@
+﻿@import url('content.css');
+/*used to separate links in tile*/
+	#l-title {
+		width: 960px;
+	}
+/*background image/main page porperties*/
+	#multiImage {
+		background-image: url("Images/Back/backgroundTopTile.gif"), url("Images/Back/backgroundBotTile2.png");
+		background-repeat: repeat-x, repeat;
+		background-position: bottom, top;
+		background-attachment: fixed;
+		background-color: #333333;
+		font: 16px verdana, arial, helvetica, sans;
+		margin: 0;
+		padding: 0;
+		text-align: center;
+		min-width: 960px;
+	}
+/*nav edits*/
+	#l-nav, #l-nav ul{
+		float: left;
+		z-index: 1000;
+		background-image: url("Images/NAV/TopBarBG.png");
+		padding: 0;
+		margin: 0;
+		font-size: 110%;
+		position: relative;
+		width: 100%;
+	}
+/*home button properties*/
+	#l-nav li.first {
+		padding-left: 8px;
+		border-width: 0;
+	}
+/*nav text display*/
+	#l-nav a, 
+	#l-nav span.navtext, 
+	#l-nav div.navtext {
+		text-shadow: 2px 2px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+		display: block;
+		color: #cccccc;
+		text-decoration: none;
+		font-weight: bold;
+		font-size: 14px;
+	}
+/*spacing between nav lists and from the top*/
+	#l-nav span.navtext, #l-nav div.navtext {
+		margin: 0em 0.5em;
+		line-height: 30px;
+		cursor: pointer;
+	}
+/*arrow display*/
+	#l-nav div.downarrow {
+		padding-right: 11px;
+		background: url('Images/NAV/ArrowDownSmall.png') no-repeat right 50%;
+	}
+	#l-nav div.rightarrow {
+		margin-right: 20px;
+		background: url('Images/NAV/ArrowRightSmall.png') center right no-repeat;
+	}
+/*make nav horizontal*/
+	#l-nav li {
+		height: 30px;
+		vertical-align: middle;
+		float: left;
+		padding-right: 15px;
+		padding-left: 1px;
+		border: solid #999;
+		min-width: 1em;
+		border-width: 0 0 0 0px;
+		/*hide bullets infront of item*/
+		list-style: none;
+	}
+/*home button properties*/
+	#l-nav li.home {
+		padding-left: 12px;
+		border-width: 0;
+	}
+/*background and sizing for list*/
+	#l-nav li li {
+		padding-right: 0;
+		padding-left: 0px;
+		background-image: url('Images/Back/ChildBG.png');
+		width: 100%;
+	}
+/* children menus start offscreen */
+	#l-nav li ul {
+		position: absolute;
+		width: 10em;
+		padding: 0;
+		left: -999em;
+	}
+/*first item in list properties*/
+	#l-nav li li.first {
+		padding-left: 0px;
+	}
+/*possition of text in lists*/
+	#l-nav li ul span.navtext, 
+	#l-nav li ul div.navtext {
+		width: auto;
+		text-align: center;
+		text-decoration: none;
+	}
+/*sub list nav hover*/
+	#l-nav li:hover, 
+	#l-nav li.sfhover {
+		background-image: url("Images/NAV/navhover.png");
+	}
+/* subchildren menus start offscrean */
+	#l-nav li:hover ul ul, #l-nav li:hover ul ul ul, 
+	#l-nav li.sfhover ul ul, #l-nav li.sfhover ul ul ul {
+		left: -999em;
+	}
+/* when hovered over your parent, move child onscreen */
+	#l-nav li:hover ul, #l-nav li li:hover ul, #l-nav li li li:hover ul,
+	#l-nav li.sfhover ul, #l-nav li li.sfhover ul, #l-nav li li li.sfhover ul {
+		left: auto;
+		margin-left: -1px;
+	}
+
+	#l-nav li li:hover ul,
+	#l-nav li li.sfhover ul {
+		margin-left: 13.9em;
+		margin: -30px 0 0 14em;
+	}
+/* search edit*/
+	input.searchbox {
+		font-size: 10pt;
+		margin-top: 4px;
+		padding: 0;
+	}
+
+	#l-nav li.search {
+		float: right;
+		padding-right: 7px;
+		margin-right: 0px;
+		background-image: none;
+	}
+
+	#l-nav li.search form {
+		margin-top: 0.28em;
+	}
+
+	#l-nav li.search input[type=image] {
+		margin-left: 0;
+		vertical-align: middle;
+	}
+/*side edit*/
+	#l-side {
+		float: right;
+		background-image: url("Images/Side Links/SideBarBG.png");
+		background-repeat: repeat;
+		background-attachment: scroll;
+		width: 150px;
+		height: 425px;
+		padding-top: 5px;
+		margin-bottom: 15px;
+		display: inline;
+		clear: none;
+		position: relative;
+		z-index: 100;
+		display: block;
+		text-align: center;
+	}
+	#l-side a:link, #l-side a:visited, #l-side a:active, #l-side a:hover {
+		text-decoration: none;
+	}
+/*footer edit*/
+	#l-foot {
+		padding: 80px 0 0 0;
+		clear: both;
+		color: #000;
+		font-size: 14px;
+		font-weight: bolder;
+	}
+	#l-foot :link, #l-foot :visited {
+		text-decoration: underline;
+	}
+
+
+
