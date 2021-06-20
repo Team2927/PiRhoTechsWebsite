@@ -2,36 +2,37 @@
 {% extends 'base.html' %}
 
 {% block title %}
-    Home--PiRhoTechs--GKHS Robotics
+Home--PiRhoTechs--GKHS Robotics
 {% endblock %}
 
 {% block content %}
-    <div class="main_display row">
-        <div class="col-4"></div>
-        <div class="col-4 mt-5">
-            {% include 'partials/slideshow.html' %}
-        </div>
-        <div class="col-4"></div>
+<div class="main_display row">
+    <div class="col-4"></div>
+    <div class="col-4 mt-5">
+        {% include 'partials/slideshow.html' %}
     </div>
-    <br /> &nbsp;
-    <h1>Latest News</h1>
+    <div class="col-4"></div>
+</div>
+<br /> &nbsp;
+<h1>Latest News</h1>
 
-    <img src={{ url_for('static', filename='images/reddivider.png') }} alt="divider ribbon">
-    <h2>Freshman First day/Link Day</h2>
-    <p>Here at GKHS freshman are encouraged to attend the first day on Wednesday, August 30th, 2017</p>
-    <p>on this day the Staff, link crew, ASB staff and students, and various groups will be at gk in order to show you around the school as well as help you plan your routes to classes and invite you to join the team.</p>
-    <img src={{ url_for('static', filename='images/divider_red_wide.png') }} alt="red divider">
+<img src={{ url_for('static', filename='assets/reddivider.png' ) }} alt="divider ribbon">
+<h2>Freshman First day/Link Day</h2>
+<p>Here at GKHS freshman are encouraged to attend the first day on Wednesday, August 30th, 2017</p>
+<p>on this day the Staff, link crew, ASB staff and students, and various groups will be at gk in order to show you
+    around the school as well as help you plan your routes to classes and invite you to join the team.</p>
+<img src={{ url_for('static', filename='assets/divider_red_wide.png' ) }} alt="red divider">
 
-    <h2>First Day</h2>
-    <p>School At GKHS(Graham Kapowsin High School) Started on Thursday, September 7th, 2017</p>
-    <img src={{ url_for('static', filename='images/divider_red_wide.png') }} alt="red divider">
+<h2>First Day</h2>
+<p>School At GKHS(Graham Kapowsin High School) Started on Thursday, September 7th, 2017</p>
+<img src={{ url_for('static', filename='assets/divider_red_wide.png' ) }} alt="red divider">
 
 
-    <h2>First Meeting </h2>
-    <p>Our first Meeting for 2017-2018 was on </p>
-    <p>Thursday September 21st in Room 174 from 2:00 - 4:15pm</p>
-    <img src={{ url_for('static', filename='images/divider_red_wide.png') }} alt="red divider">
+<h2>First Meeting </h2>
+<p>Our first Meeting for 2017-2018 was on </p>
+<p>Thursday September 21st in Room 174 from 2:00 - 4:15pm</p>
+<img src={{ url_for('static', filename='assets/divider_red_wide.png' ) }} alt="red divider">
 
-    <!-- <a href="{{ url_for('home')}}"><button type="button" class="btn btn-secondary mt-5">Go Home</button></a>z -->
+<!-- <a href="{{ url_for('home')}}"><button type="button" class="btn btn-secondary mt-5">Go Home</button></a>z -->
 
 {% endblock %}

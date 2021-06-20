@@ -23,11 +23,11 @@
   float: left;
   width: 200px;
   height: 120px;
-  background-image: url("images/header/first_trans.png");
+  background-image: url("assets/header/first_trans.png");
 }
 
 .first_trans:hover {
-  background-image: url("images/header/first_trans_rollover.png");
+  background-image: url("assets/header/first_trans_rollover.png");
 }
 
 .main_display {
@@ -70,12 +70,12 @@ a:hover {
 }
 
 div.officiallinks {
-      float: left;
-      display: block;
-      width: 50%;
+  float: left;
+  display: block;
+  width: 50%;
 }
 div.localteams {
-      float: right;
-      display: block;
-      width: 50%;
+  float: right;
+  display: block;
+  width: 50%;
 }
