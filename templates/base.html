@@ -1,47 +1,62 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <meta name="Copyright" content=" 2020 Copyright (c) Chris Barnes, All rights reserved." />
-    <meta name="description" content="The home of PI RHO TECHS, Robotics team 2927 from Graham, Washinton." />
-    <meta
-      name="keywords"
-      content="PI, RHO, FRC, first, FIRST, robotics, team, 2927, Graham-Kapowsin, high, school, GKHS, wa, WA, Washington"
-    />
-    <meta name="author" content="Chirs Barnes" />
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <meta name="Copyright" content=" 2020 Copyright (c) Chris Barnes, All rights reserved." />
+  <meta name="description" content="The home of PI RHO TECHS, Robotics team 2927 from Graham, Washinton." />
+  <meta name="keywords"
+    content="PI, RHO, FRC, first, FIRST, robotics, team, 2927, Graham-Kapowsin, high, school, GKHS, wa, WA, Washington" />
+  <meta name="author" content="Chirs Barnes" />
 
-    <!-- Latest compiled and minified CSS -->
-    <link rel='stylesheet' href=https://bootswatch.com/4/solar/bootstrap.min.css>
-    <!-- CUSTOM STYLES -->
-    <link rel="stylesheet" href="/static/styles.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel='stylesheet' href=https://bootswatch.com/4/solar/bootstrap.min.css>
+  <!-- CUSTOM STYLES -->
+  <link rel="stylesheet" href="/static/styles.css">
 
 
-    <link rel="shortcut icon" href="/static/favicon.ico">
-    <title>{% block title %}{% endblock %}</title>
-  </head>
-  <body>
-    <div class='container'>
-        {% include 'partials/header.html' %}
-        
-        <div id="content">
-            {% block content %}
-                BODY CONTENT GOES HERE
-            {% endblock %}
-        </div>
+  <link rel="shortcut icon" href="/static/favicon.ico">
+  <title>{% block title %}{% endblock %}</title>
 
-        {% include 'partials/footer.html' %}
+  <script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
+    new Crate({
+      server: '859991164476194816', // Team 2927 PiRhoTechs
+      channel: '859991165449011245' // #general
+    })
+  </script>
+</head>
+
+<body>
+  <div class='container'>
+    {% include 'partials/header.html' %}
+
+    <div id="content">
+      {% block content %}
+      BODY CONTENT GOES HERE
+      {% endblock %}
     </div>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  </body>
+    {% include 'partials/footer.html' %}
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
