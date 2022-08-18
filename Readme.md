@@ -1,14 +1,14 @@
 # PiRhoTechs
 
-https://frc-events.firstinspires.org/team/2927
+<https://frc-events.firstinspires.org/team/2927>
 
-First Strong Hold(2016), https://www.thebluealliance.com/team/2927/2016
-First Power Up(2018), https://www.thebluealliance.com/team/2927/2018
-Destination: Deep Space(2019) https://www.thebluealliance.com/team/2927/2019
+First Strong Hold(2016), <https://www.thebluealliance.com/team/2927/2016>
+First Power Up(2018), <https://www.thebluealliance.com/team/2927/2018>
+Destination: Deep Space(2019) <https://www.thebluealliance.com/team/2927/2019>
 
-https://www.andymark.com/
-https://www.andymark.com/pages/first-tech-challenge
-https://www.andymark.com/pages/first-robotics-competition
+<https://www.andymark.com/>
+<https://www.andymark.com/pages/first-tech-challenge>
+<https://www.andymark.com/pages/first-robotics-competition>
 
 ## HOW TO START THIS PROJECT
 
@@ -53,6 +53,5 @@ DVOLLMER@BETHELSD.ORG,
 SEJENSEN@BETHELSD.ORG,
 EKURLE@BETHELSD.ORG,
 TMCNAMARA@BETHELSD.ORG,
-
 
 tstave@lwsd.org -->
