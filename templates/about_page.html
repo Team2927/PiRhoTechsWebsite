@@ -1,142 +1,203 @@
-{% extends 'base.html' %} {% block title %} About/Contact--PiRhoTechs--GKHS Robotics {% endblock %} {% block content %}
-<h1>Who We Are</h1>
-<p style="text-align: center"><em style="font-size: 1.5em">"The Flames Just Keeps Growing Higher!"</em></p>
+{% extends 'partials/base.html' %} {% block title %} About {% endblock %} {% block content %}
+<style>
+  p {
+    font-size: medium;
+    font-family: helvetica;
+  }
+  .first {
+    padding-left: 2em;
+  }
+  .first > p::first-letter {
+    color: #ff0000;
+    font-size: 200%;
+  }
+</style>
 
-<h4 style="text-align: left">Our Mission</h4>
+<h2 style="text-align: center; color: #ff4500">
+  <em style="font-size: 1.5em">"The Flames Just Keeps Growing Higher!"</em>
+</h2>
+
+<h1>What is <a title="FIRST Website" href="http://www.firstinspires.org" target="_blank">FIRST</a>?</h1>
+
+<p>FIRST's ultimate goal is to inspire students to pursue careers in science and technology related fields.</p>
+
+<div class="first">
+  <p>For</p>
+  <p>Inspiration and</p>
+  <p>Recognition of</p>
+  <p>Science and</p>
+  <p>Technology</p>
+</div>
+
 <p>
-  <span style="font-family: helvetica; font-size: medium">
-    <em><span style="color: #ffffff">
-        Inspire students to become leaders through engineering and the fun of
-        <a href="{{ url_for('sponsors')}}">FIRST</a>Robotics.
-      </span></em>
-  </span>
+  In its essence, this means that the FIRST Organization and all three of its competitions (FLL, FTC, FRC), are training
+  middle school & high school students to be the next generation of scientists, engineers, designers, inventors, and
+  other members of science disciplines.
 </p>
 
-<h4>About the Team</h4>
+<h3>
+  About
+  <a title="FIRST Robotics Competition" href="http://www.usfirst.org/roboticsprograms/frc" target="_blank">
+    FIRST Robotics Competition (FRC)
+  </a>
+</h3>
 <p>
-  <span style="font-family: helvetica; font-size: medium">Pi Rho Techs is FIRST Robotics Team 2927, from Graham-Kapowsin
-    High School in Graham, WA. <br /><br />
-    The Pi Rho Techs Team is focused on growth as a team and as a family freindly area. In which students of all feilds
-    can come and express their unique personalities in order to find new friends and to feel more acquainted to the
-    school.
-  </span>
+  FRC challenges teams of students & mentors to solve a common problem in a six-week timeframe using a standard "kit of
+  parts" & a common set of rules. Teams build robots from the parts and enter them in a series of competitions designed
+  by Dean Kamen and Woodie Flowers. The Competition has grown to over 900 teams competing in 26 Regional Events. The
+  Championship is held at the Georgia Dome in Atlanta where more than 7,000 students participate. FIRST redefines
+  winning for these students. As teams are rewarded for excellence in design, demonstrated team spirit, gracious
+  professionalism, maturity, and thier ability to overcome obstacles. Scoring the most points is a secondary goal.
+  <b>For the ture win, is in the partnerships & network we build to last.</b>
 </p>
-
-<h4>About Graham-Kapowsin High School</h4>
-<p>
-  <span style="font-family: helvetica; font-size: medium">Graham-Kapowsin High School, located in a residential suburb
-    of Graham, WA, it offers a comprehensive curriculum
-    for students in grades 9-12. In addition to traditional core subjects, students can choose from a wide variety of
-    Advanced Placement offerings for college credit, as well as numerous electives in arts, music, engineering, business
-    and more. Vocational and alternative education experiences are also made available to students. A highly skilled
-    staff works to create a warm and welcoming environment for all students and actively encourages the involvement of
-    parents in their children's education.</span>
-</p>
-<p>
-  <span style="font-family: helvetica; font-size: medium">
-    <a title="Bethel School District" href="https://www.bethelsd.org/" target="_blank">Bethel School District</a>
-    <br />
-    <a title="Graham-Kapowsin High School" href="https://www.bethelsd.org/gkhs" target="_blank">Graham-Kapowsin High
-      School</a>
-    <br />
-    22100 108th Ave E,
-    <br />
-    Graham, WA 98338
-  </span>
-</p>
-
 <!--
-<h4>About Harris</h4>
-<p><span style="font-family: helvetica; font-size: medium;">Harris Corporation is an international communications equipment company focused on providing product, system, and service solutions for commercial and government customers. The company's five operating divisions serve markets for microwave, broadcast, network support, secure tactical radio, and government communications systems. Harris has more than 10,000 employees, including 4,000 engineers and scientists.
-</span></p>
-<p><span style="font-family: helvetica; font-size: medium;">Harris RF Communications Division (RFCD) is a leading supplier of secure voice and data communications products, systems and networks to military, government, and commercial organizations worldwide.
-</span></p>
-<p><span style="font-family: helvetica; font-size: medium;"><a title="Harris" href="http://www.rfcomm.harris.com/">Harris RF Communications</a></span>
-<br />
-<span style="font-family: helvetica; font-size: medium;">1680 University Avenue</span><br /><span style="font-family: helvetica; font-size: medium;">Rochester, New York 14610
-</span></p>
+<p>
+  This is the competition that us high school students compete in. Our robots are usually large in size (the maximum
+  allowable size is 5 feet tall!) and have a relatively large playing field (27' by 54') and have tasks that, on paper,
+  seem relatively simple, yet are very demanding in strategy and skill.
+</p>
+<p style="text-align: center">
+  <img src="Assests/Who_We_Are/WhatFIRST/FRC-FIELD.png" alt="" width="542" height="373" />
+</p>
 -->
 
-<h4>About the FIRST Robotics Competition</h4>
+<h3>
+  About
+  <a title="FTC Website" href="http://www.usfirst.org/roboticsprograms/ftc" target="_blank">
+    FIRST Tech Challenge (FTC)
+  </a>
+</h3>
 <p>
-  <span style="font-family: helvetica; font-size: medium">The
-    <a title="What is FIRST" href="{{ url_for('sponsors')}}">FIRST </a>
-    Robotics Competition challenges teams of students and their mentors to solve a common problem in a six-week
-    timeframe using a standard "kit of parts" and a common set of rules. Teams build robots from the parts and enter
-    them in a series of competitions designed by Dean Kamen and Woodie Flowers. The Competition has grown to over 900
-    teams competing in 26 Regional Events, and The Championship held at the Georgia Dome in Atlanta where more than
-    7,000 students participate. <br /><br />
-    FIRST redefines winning for these students. Teams are rewarded for excellence in design, demonstrated team spirit,
-    gracious professionalism and maturity, and ability to overcome obstacles. Scoring the most points is a secondary
-    goal. Winning means building partnerships that last.
-    <br /><br />
-    <a title="FIRST Website" href="http://www.usfirst.org/" target="_blank">FIRST</a>
-    <br />
-    <a title="FIRST Robotics Competition" href="http://www.usfirst.org/roboticsprograms/frc" target="_blank">FIRST
-      Robotics Competition</a>
-  </span>
+  FIRST tech challenge is a robotics challenge that usually has something to do with a task that must be done entirely
+  by the robot (Flipping switches, turning mechanisms, putting Tab A into slot B, etc.). Their fields and robots are
+  almost always much smaller than that of FRC, but are mequired to carry out much more difficult tasks in the course of
+  the game. This competition is also for high school students.
+</p>
+<!--
+<p style="text-align: center">
+  <img src="Assets/Who_We_Are/WhatFIRST/FTC-FIELD.png" alt="" width="542" height="373" />
+</p>
+<p style="text-align: center">1st Annual Rochester FTC Tournament at St. John Fisher College</p>
+-->
+
+<h3>
+  About
+  <a title="FLL Website" href="http://www.usfirst.org/roboticsprograms/fll" target="_blank">
+    First Lego League (FLL)
+  </a>
+</h3>
+<p>
+  FIRST Lego League is the middle school level competition that FIRST created. Using the Lego Mindstorm kit, these
+  students are tasked with programming the robot to successfully complete as many of the varied objectives they are
+  given as possible.
+</p>
+<!--
+<p style="text-align: center">
+  <img src="Assets/Who_We_Are/WhatFIRST/FLL-FIELD.png" alt="" width="509" height="360" />
+</p>
+<p style="text-align: center">Razzle Dazzle, FLL pre-competition scrimmage</p>
+-->
+
+<br />
+<hr />
+<br />
+
+<h1>Who We Are</h1>
+<h3 style="text-align: left">Our Mission</h3>
+<p>
+  <em>
+    <span style="color: #ffffff">
+      Inspire students to become leaders through engineering and the fun of
+      <a href="{{ url_for('sponsors')}}">FIRST Robotics</a>.
+    </span>
+  </em>
 </p>
 
-<h4>About Team Structure</h4>
+<h3>About Team 2927 - PiRhoTechs</h3>
 <p>
-  <span style="font-family: helvetica; font-size: medium">For specialized work, the team is divided into the following
-    subteams:</span>
+  Pi Rho Techs is FIRST Robotics Team 2927, from Graham-Kapowsin High School in Graham, WA.
+  <br />
+  <br />
+  The Pi Rho Techs Team is focused on growth as a team and as a family freindly area. In which students of all feilds
+  can come and express their unique personalities in order to find new friends and to feel more acquainted to the
+  school.
 </p>
+
+<h3>Our Team Structure</h3>
+<p>For specialized work, the team is divided into the following subteams:</p>
 <ul>
   <li>
-    <span style="font-family: helvetica; font-size: medium"><span
-        style="color: #b50000"><strong>Leadership:</strong></span> This subteam is responsible for creating the
-      team structure, determining the team calendar, setting up team activities and trainings, and managing school
-      relations.</span>
+    <span style="color: #b50000"><strong>Leadership:</strong></span>
+    This subteam is responsible for creating the team structure, determining the team calendar, setting up team
+    activities and trainings, and managing school relations.
   </li>
 
   <li>
-    <span style="font-family: helvetica; font-size: medium"><span
-        style="color: #b50000"><strong>Mechanical:</strong></span> This subteam is responsible for designing the
-      mechanical components of the robot, as well as putting them together. Components are designed in CAD, and
-      sometimes a prototype is created before final assembly.</span>
+    <span style="color: #b50000"><strong>Mechanical:</strong></span>
+    This subteam is responsible for designing the mechanical components of the robot, as well as putting them together.
+    Components are designed in CAD, and sometimes a prototype is created before final assembly.
   </li>
 
   <li>
-    <span style="font-family: helvetica; font-size: medium"><span
-        style="color: #b50000"><strong>Electrical:</strong></span> This subteam is responsible for designing and
-      producing all electrical systems for the robot and control panel. It is also responsible for any pneumatics that
-      are used.</span>
+    <span style="color: #b50000"><strong>Electrical:</strong></span>
+    This subteam is responsible for designing and producing all electrical systems for the robot and control panel. It
+    is also responsible for any pneumatics that are used.
   </li>
 
   <li>
-    <span style="font-family: helvetica; font-size: medium"><span
-        style="color: #b50000"><strong>Programming:</strong></span> This subteam is responsible for creating the
-      actual code that makes the robot work. It also creates the autonomous code(s) for the competition.</span>
+    <span style="color: #b50000"><strong>Programming:</strong></span>
+    This subteam is responsible for creating the actual code that makes the robot work. It also creates the autonomous
+    code(s) for the competition.
   </li>
 
   <li>
-    <span style="font-family: helvetica; font-size: medium"><span
-        style="color: #b50000"><strong>Webpage:</strong></span> This subteam is responsible for creating and
-      maintaining the webpage, forums, blog, wiki, and smugmug photo database. They also work to unify our teams social
-      media and web presence.</span>
+    <span style="color: #b50000"><strong>Webpage:</strong></span>
+    This subteam is responsible for creating and maintaining the webpage, forums, blog, wiki, and smugmug photo
+    database. They also work to unify our teams social media and web presence.
   </li>
 
   <li>
-    <span style="font-family: helvetica; font-size: medium"><span
-        style="color: #b50000"><strong>Strategy:</strong></span> This subteam is responsible for actually
-      controlling and driving the robot. They are also the rules experts of the team, and have created strategies for
-      the best scores.</span>
+    <span style="color: #b50000"><strong>Strategy:</strong></span>
+    This subteam is responsible for actually controlling and driving the robot. They are also the rules experts of the
+    team, and have created strategies for the best scores.
   </li>
 
   <li>
-    <span style="font-family: helvetica; font-size: medium"><span
-        style="color: #b50000"><strong>Marketing:</strong></span> This subteam creates all presentations, press
-      releases, newsletters and any other public relations propaganda. They are also responsible for team logos,
-      clothing, and team spirit.</span>
+    <span style="color: #b50000"><strong>Marketing:</strong></span>
+    This subteam creates all presentations, press releases, newsletters and any other public relations propaganda. They
+    are also responsible for team logos, clothing, and team spirit.
   </li>
 
   <li>
-    <span style="font-family: helvetica; font-size: medium"><strong><span
-          style="color: #b50000">Animation:</span>&nbsp;</strong>This subteam learns the ins and outs of 3D
-      Studio Max in preparation for the Animation competition each year.</span>
+    <strong><span style="color: #b50000">Animation:</span>&nbsp;</strong>
+    This subteam learns the ins and outs of 3D Studio Max in preparation for the Animation competition each year.
   </li>
 </ul>
+
+<h3>About Graham-Kapowsin High School</h3>
+<p>
+  Graham-Kapowsin High School, located in a residential suburb of Graham, WA, it offers a comprehensive curriculum for
+  students in grades 9-12. In addition to traditional core subjects, students can choose from a wide variety of Advanced
+  Placement offerings for college credit, as well as numerous electives in arts, music, engineering, business and more.
+  Vocational and alternative education experiences are also made available to students. A highly skilled staff works to
+  create a warm and welcoming environment for all students and actively encourages the involvement of parents in their
+  children's education.
+</p>
+<p>
+  <a title="Bethel School District" href="https://www.bethelsd.org/" target="_blank"> Bethel School District </a>
+  <br />
+  <a title="Graham-Kapowsin High School" href="https://www.bethelsd.org/gkhs" target="_blank">
+    Graham-Kapowsin High School
+  </a>
+  <br />
+  22100 108th Ave E,
+  <br />
+  Graham, WA 98338
+</p>
+
+<br />
+<hr />
+<br />
 
 <h1>We would love to hear from you!</h1>
 <form method="post" action="http://formspree.io/2927PIRHOTECHS@gmail.com">
@@ -159,4 +220,5 @@
     </tr>
   </table>
 </form>
+
 {% endblock %}
